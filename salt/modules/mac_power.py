@@ -409,6 +409,7 @@ def set_restart_power_failure(enabled):
     return salt.utils.mac_utils.confirm_updated(
         state,
         get_restart_power_failure,
+        normalize_ret=True,
     )
 
 
@@ -508,4 +509,5 @@ def set_sleep_on_power_button(enabled):
     return salt.utils.mac_utils.confirm_updated(
         state,
         get_sleep_on_power_button,
+        normalize_ret=True,
     )
